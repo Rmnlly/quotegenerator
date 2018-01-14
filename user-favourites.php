@@ -20,7 +20,7 @@
       <?
         while($row = $stmt->fetch()){
           ?>
-            <li><?=$row['quoteText']?> <a class="quote-favourite" href="process-remove-favourite.php?id=<?=$quoteId?>"><span> Remove From Favourites</span></a></li>
+            <li><p><?=$row['quoteText']?></p> <a class="quote-favourite" href="process-remove-favourite.php?id=<?=$quoteId?>"><span> Remove From Favourites</span></a></li>
           <?
         }
       ?>

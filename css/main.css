@@ -216,11 +216,13 @@ input[type=submit]:hover.btn-generate  {
 
 .favourites-container ul li {
   margin: 10px 0;
+  border-left: 3px solid #fff;
+  padding-left: 10px;
 }
 
 li > a.quote-favourite {
   font-weight: 600;
-  float: right;
+  float: left;
 }
 
 .quote-favourite:hover {
