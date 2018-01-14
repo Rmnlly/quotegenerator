@@ -51,12 +51,6 @@ input[type=submit] {
   /* font-family: 'Rajdhani', sans-serif; */
 }
 
-/* input[type=submit]:hover {
-  background:#fff;
-  color:#000;
-  transition: background .5s;
-} */
-
 .main-container { /*Container for main content to push footer down*/
   padding: 0;
   flex: 1 0 auto;
@@ -82,16 +76,8 @@ input[type=submit] {
   padding-left: 0px;
 }
 
-.signup input[type=submit] {
-  width: auto;
-  padding: 5px 18px;
-  text-shadow: none;
-  border: none;
-  cursor: pointer;
-  box-shadow: none;
-  background: #6FC9C3;
-  color: #000;
-  /* font-family: 'Rajdhani', sans-serif; */
+.signup input[type="submit"] {
+    border: none;
 }
 
 .login {
@@ -126,10 +112,9 @@ input[type=submit] {
   padding: 0px;
 }
 
-/* .footer-info {
-  justify-content: flex-end;
-  margin: 10px;
-} */
+ul.footer-info {
+    padding: 0;
+}
 
 .about-us {
   justify-content: flex-end;
@@ -162,15 +147,17 @@ ul {
   margin: 0 1em
 }
 
+
+
 .generator-container {
-  width: 80%;
+  width: 85%;
   text-align: center;
   margin: 5rem auto;
   color: #fff;
   background: radial-gradient(#c6d356, #528945);
   border-radius: 50px;
   min-height: 150px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .generator-container h3,
@@ -194,11 +181,22 @@ input.btn-generate {
   border-radius: .3rem;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  margin: 20px
+  margin: 20px;
+  color: #000;
+}
+
+input[type=submit]:hover.btn-generate  {
+  background:#fff;
+  color:#000;
+  transition: background .5s;
 }
 
 
-
-
 @media screen and (max-width: 480px){
+  input.btn-generate {
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.5rem;
+  }
+
 }
