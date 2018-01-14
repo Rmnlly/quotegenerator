@@ -2,9 +2,11 @@
 
   </div>
   <footer class="footer">
-    <ul class="footer-info">
-      <li><a href="#">About Us</a></li>
-    </ul>
+    <div class="footer-content">
+      <ul class="footer-info">
+        <li class="about-us"><a href="#">About Us</a></li>
+      </ul>
+    </div>
   </footer>
   </body>
 </html>
