@@ -6,7 +6,7 @@
   <ul>
     <?if($_SESSION['authenticated'] == true){
       ?>
-      <li><a href="user-account.php">My Account</a></li>
+      <li><a href="user-favourites.php">My Favourites</a></li>
       <li><a href="process-logout.php">Logout</a></li>
       <?
     } else {

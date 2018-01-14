@@ -38,6 +38,9 @@ input {
   border-radius: 5px;
   background: #fff;
   color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type=submit] {
@@ -48,7 +51,6 @@ input[type=submit] {
   box-shadow: none;
   background: #6FC9C3;
   color: #fff;
-  /* font-family: 'Rajdhani', sans-serif; */
 }
 
 .main-container { /*Container for main content to push footer down*/
@@ -191,12 +193,53 @@ input[type=submit]:hover.btn-generate  {
   transition: background .5s;
 }
 
+.favourites-container{
+  margin: auto;
+  padding: 15px;
+  color: #fff;
+  width: 90%;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #0064e0, #01a901);
+}
+
+.favourites-container h3 {
+  font-size: 2em;
+  color: #fbfbfb;;
+  font-family: 'Domine', serif;
+  text-align: center;
+}
+
+.favourites-container ul {
+  flex-direction: column;
+  padding: 0px;
+}
+
+.favourites-container ul li {
+  margin: 10px 0;
+}
+
+li > a.quote-favourite {
+  font-weight: 600;
+  float: right;
+}
+
+.quote-favourite:hover {
+  color: #000;
+  transition: color .5s;
+}
 
 @media screen and (max-width: 480px){
+  ul {
+    padding: 0px;
+  }
+
   input.btn-generate {
     border-radius: .5rem;
     font-size: 1.5rem;
     padding: 0.75rem 1.5rem;
   }
 
+  .generator-container p {
+    font-size: 1em;
+  }
 }
